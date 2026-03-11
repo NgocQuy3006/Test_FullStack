@@ -1,4 +1,4 @@
-# HRM Labs – Junior Fullstack Developer Technical Assessment
+# Fullstack Developer Technical Assessment
 
 ## Overview
 
