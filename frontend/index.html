@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>HR Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>HR Management System</h1>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Add Employee</h2>
+
+<input id="id" placeholder="ID">
+<input id="name" placeholder="Name">
+<input id="department" placeholder="Department">
+<input id="leaveBalance" placeholder="Leave Balance">
+
+<button onclick="addEmployee()">Add Employee</button>
+
+</div>
+
+
+<div class="card">
+
+<h2>Employees</h2>
+
+<button onclick="getEmployees()">Load Employees</button>
+
+<table>
+
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Department</th>
+<th>Leave Balance</th>
+</tr>
+</thead>
+
+<tbody id="employeeTable"></tbody>
+
+</table>
+
+</div>
+
+
+<div class="card">
+
+<h2>Create Leave Request</h2>
+
+<input id="empId" placeholder="Employee ID">
+<input id="startDate" type="date">
+<input id="endDate" type="date">
+<input id="reason" placeholder="Reason">
+
+<button onclick="createLeave()">Create Leave</button>
+
+</div>
+
+
+<div class="card">
+
+<h2>Leave Requests</h2>
+
+<button onclick="getLeaves()">Load Leave Requests</button>
+
+<table>
+
+<thead>
+<tr>
+<th>ID</th>
+<th>Employee</th>
+<th>Start</th>
+<th>End</th>
+<th>Reason</th>
+<th>Status</th>
+</tr>
+</thead>
+
+<tbody id="leaveTable"></tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
